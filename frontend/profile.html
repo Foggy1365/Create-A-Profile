@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1><span id="headerUsername">User</span>'s Profile</h1>
+      <div>
+        <button id="editBtn" class="btn btn-primary">Edit Profile</button>
+        <button id="logoutBtn" class="btn btn-secondary">Logout</button>
+      </div>
+    </header>
+    
+    <div class="profile-container">
+      <div class="profile-picture-section">
+        <img id="profilePicture" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150' viewBox='0 0 150 150'%3E%3Crect width='150' height='150' fill='%23e0e0e0'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='%23999' font-family='Arial' font-size='20'%3ENo Photo%3C/text%3E%3C/svg%3E" alt="Profile Picture">
+      </div>
+      
+      <div class="profile-info">
+        <div class="info-group">
+          <label>Username:</label>
+          <p id="username">-</p>
+        </div>
+        <div class="info-group">
+          <label>Email:</label>
+          <p id="email">-</p>
+        </div>
+        <div class="info-group">
+          <label>First Name:</label>
+          <p id="firstName">-</p>
+        </div>
+        <div class="info-group">
+          <label>Last Name:</label>
+          <p id="lastName">-</p>
+        </div>
+        <div class="info-group">
+          <label>Birthday:</label>
+          <p id="birthday">-</p>
+        </div>
+        <div class="info-group">
+          <label>Biography:</label>
+          <p id="biography">-</p>
+        </div>
+        <div class="info-group">
+          <label>Favorite Number:</label>
+          <p id="favoriteNumber">-</p>
+        </div>
+      </div>
+    </div>
+    
+    <div id="message" class="message" style="display: none;"></div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
